@@ -1,0 +1,25 @@
+<ion-view ng-controller="LoginController">
+	
+	<ion-content id="login_bg">
+	
+		<img class="logo" src="../img/logo.png"></img>
+		<div class="AppName">
+			<h1 style="text-align: center; margin-top: 20px; font-size: 100px; font-family: myFirstFont; color:#FFFFFF;"> Yello</h1>
+		</div>
+		
+		<div class="list" style="margin-top:10%;">
+			<div class="item item-input padding">
+				<label class="item-input-wrapper">
+					<input type="text" placeholder="Enter your name..." ng-model="nickname" ng-enter="join(nickname)"/>
+				</label>
+				<button class="button button-small button-dark icon icon-right ion-log-in" ng-click="join(nickname)">Login</button>
+			</div>
+		</div>
+		
+		<center>
+			<h2 style="color: white;"></h2>
+			<button class="button icon-left ion-social-facebook button-block" style="background-color: #3b5998; color: #FFF; border: none; width: 95% !important" ng-click="loginWithFacebook()">Login with facebook</button>
+		</center>
+	</ion-content>
+
+</ion-view>
